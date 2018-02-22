@@ -11,11 +11,13 @@ public class Loops {
         for (int i = 0; i < n; i++) {
             System.out.println(i);
         }
+        //i ++ = i+1, i+1+1 ...
         //1. wyświetlić kolejnych n liczb *2 (2,4,6,8,...)
         System.out.println("n liczby * 2");
         for (int i = 0; i < n; i++) {
             System.out.println(2 * (i + 1));
         }
+
         // || for (int i = 0; i < 2 * n; i += 2)
         // System.out.println(i + 2);
 
@@ -58,7 +60,28 @@ public class Loops {
                 System.out.println(i * i);
             }
             //*. obliczyć kolejne sumy n liczb (1 + 2 + 3 + 4 + ... )
+        System.out.println(" Suma n kolejnych liczb");
+        int addresult = 0;
+
+        for (int i=0; i < n ; i ++) {
+            if ((i != 0) && (i + 1) != n) {
+                System.out.print((i + 1) + " + ");
+            }else if ((i == 0) && ( i + 1 ) != n ){
+
+                System.out.print((i + 1) + " + ");
+            } else {
+                System.out.print( (i + 1) + " = ");
+            }
+            addresult += (i + 1);
+        }System.out.print( addresult);
+          //  System.out.println(firstValue + " + " + secondValue + " = " + (firstValue + secondValue));
+
+
+            // System.out.println(i + " + " + (i + 1) + " = " + (i + ( i + 1 )));
         }
+
+
+
 
     private static void forLoopExample() {
         System.out.println("Hello world");
